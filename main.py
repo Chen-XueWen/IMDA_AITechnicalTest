@@ -1,6 +1,7 @@
 import os
 import numpy as np
 from collections import defaultdict
+import argparse
 
 class Captcha(object):
     def __init__(self, input_folder='sampleCaptchas/input', output_folder='sampleCaptchas/output'):
@@ -92,5 +93,22 @@ class Captcha(object):
         return recognized
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="CAPTCHA character recognizer")
+
+    parser.add_argument(
+        '--input',
+        default='sampleCaptchas/input/input01.txt',
+        help='Path to input .txt image file (default: sampleCaptchas/input/input01.txt)'
+    )
+
+    parser.add_argument(
+        '--output',
+        default='output.txt',
+        help='Path to save output text file (default: output.txt)'
+    )
+
+    args = parser.parse_args()
+
     captcha = Captcha()
-    captcha('sampleCaptchas/input/input01.txt', 'output.txt')
+    captcha(args.input, args.output)
+    print(f"Processed '{args.input}' and saved result to '{args.output}'")
