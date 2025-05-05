@@ -1,5 +1,7 @@
 # CAPTCHA Identification: IMDA AI Interview
 
+Please find the code under main.py
+
 ## Problem Statement
 For the IMDA AI Technical Test, we were tasked with identifying CAPTCHAs. The constraints include:
 - Limited training data (only 25 samples)
