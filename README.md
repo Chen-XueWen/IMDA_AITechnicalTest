@@ -1,6 +1,12 @@
 # CAPTCHA Identification: IMDA AI Interview
 
-Please find the code under main.py
+## Usage
+```
+python main.py --input sampleCaptchas/input/input05.txt --output result0
+5.txt
+Processed 'sampleCaptchas/input/input05.txt' and saved result to 'result05.txt'
+```
+
 
 ## Problem Statement
 For the IMDA AI Technical Test, we were tasked with identifying CAPTCHAs. The constraints include:
@@ -44,7 +50,6 @@ For CAPTCHA recognition on new images, we:
 3. Compare each cell against our character templates using L1 norm (Manhattan distance)
 4. Select the character with the minimum distance for each cell
 5. Concatenate the five identified characters to form the complete CAPTCHA solution
-
 
 ## Conclusion
 This template-matching approach provides an elegant solution to the CAPTCHA identification task given the constraints. The method leverages the consistency in the CAPTCHA generation system and the comprehensive character coverage in the training samples to achieve reliable recognition without requiring large-scale deep learning models.
