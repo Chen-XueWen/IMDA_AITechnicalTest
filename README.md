@@ -12,7 +12,7 @@ Therefore, we do not need any deep learning techniques.
 ## Methodology
 
 ### 1. Character Cell Identification
-Rather than implementing resource-intensive deep learning techniques, we adopted a template-matching approach. First, we identified that each CAPTCHA image consists of five character cells with consistent dimensions, as illustrated in the segmentation examples below:
+We adopted a template-matching approach. First, we identified that each CAPTCHA image consists of five character cells with consistent dimensions, as illustrated in the segmentation examples below:
 
 ![Figure1](Figure_1.png)
 ![Figure2](Figure_2.png)
