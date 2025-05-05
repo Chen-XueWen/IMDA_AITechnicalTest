@@ -1,6 +1,6 @@
 # CAPTCHA Identification: IMDA AI Interview
 
-## Usage
+## Code Usage
 ```
 python main.py --input sampleCaptchas/input/input05.txt --output result05.txt
 Processed 'sampleCaptchas/input/input05.txt' and saved result to 'result05.txt'
